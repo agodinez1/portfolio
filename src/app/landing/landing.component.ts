@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -7,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
   avatarImagePath: string;
+  fidelityImagePath: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
     this.avatarImagePath = './assets/images/andre-avatar.png';
+    this.fidelityImagePath = './assets/images/fidelity-logo.jpg';
   }
 
 }
